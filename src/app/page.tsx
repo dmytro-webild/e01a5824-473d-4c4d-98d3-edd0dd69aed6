@@ -143,7 +143,6 @@ export default function LandingPage() {
             { text: "Visit Our Showroom", href: "#showroom" }
           ]}
           buttonAnimation="slide-up"
-          mediaAnimation="slide-up"
           tagAnimation="slide-up"
           containerClassName="max-w-full"
           titleClassName="text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
@@ -209,7 +208,7 @@ export default function LandingPage() {
           useInvertedBackground={false}
           buttonAnimation="slide-up"
           buttons={[{ text: "Request Your Free 3D Design", href: "#contact" }]}
-          titleClassName="text-5xl font-bold mb-4"
+          cardTitleClassName="text-5xl font-bold mb-4"
         />
       </div>
 
