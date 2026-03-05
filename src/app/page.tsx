@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
+import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
@@ -115,7 +115,7 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero" className="pt-20">
-        <HeroBillboardCarousel
+        <HeroBillboardScroll
           title="Toronto's Trusted Interlock & Construction Specialists"
           description="Premium landscaping and construction services across the GTA. Designed with precision. Built to last."
           tag="Luxury Construction"
