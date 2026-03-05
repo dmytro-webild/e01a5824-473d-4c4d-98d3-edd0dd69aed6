@@ -2,14 +2,15 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
+import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
+import BlogCardThree from '@/components/sections/blog/BlogCardThree';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
 import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
 import ContactFaq from '@/components/sections/contact/ContactFaq';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Building2, Eye, CheckCircle2, Palette, Users, MessageCircle, Sparkles, ArrowRightLeft, Cog, Footprints, Home, Zap, Shield, Hammer, Trees, Droplet, Frame, Lightbulb, Crown, Phone, Calendar } from 'lucide-react';
+import { Building2, Eye, CheckCircle2, Palette, Users, MessageCircle, Sparkles, ArrowRightLeft, Cog, Footprints, Home, Zap, Shield, Hammer, Trees, Droplet, Frame, Lightbulb, Crown, Phone } from 'lucide-react';
 import React, { useState } from 'react';
 
 interface BeforeAfterImagePair {
@@ -98,7 +99,7 @@ export default function LandingPage() {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <div id="nav" data-section="nav" className="fixed top-0 left-0 right-0 z-50">
+      <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Taishan"
           navItems={[
@@ -108,14 +109,11 @@ export default function LandingPage() {
             { name: "Process", id: "process" },
             { name: "Contact", id: "contact" }
           ]}
-          button={{
-            text: "Book Appointment Now",            href: "#contact"
-          }}
         />
       </div>
 
-      <div id="hero" data-section="hero" className="pt-20">
-        <HeroBillboardCarousel
+      <div id="hero" data-section="hero">
+        <HeroSplitDualMedia
           title="Toronto's Trusted Interlock & Construction Specialists"
           description="Premium landscaping and construction services across the GTA. Designed with precision. Built to last."
           tag="Luxury Construction"
@@ -127,24 +125,18 @@ export default function LandingPage() {
             },
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Construction detail"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1",              imageAlt: "Project showcase"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772751184333-vby3bqvq.png",              imageAlt: "Taishan Gallery"
             }
           ]}
+          rating={5}
+          ratingText="1000+ Projects Completed"
           buttons={[
             { text: "Get Your Free 3D Design", href: "#contact" },
             { text: "Visit Our Showroom", href: "#showroom" }
           ]}
           buttonAnimation="slide-up"
+          mediaAnimation="slide-up"
           tagAnimation="slide-up"
-          containerClassName="max-w-full"
+          textBoxClassName="max-w-2xl"
           titleClassName="text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
           descriptionClassName="text-lg lg:text-xl leading-relaxed"
           tagClassName="inline-flex items-center gap-2 font-semibold uppercase tracking-wider"
@@ -153,9 +145,9 @@ export default function LandingPage() {
 
       <div id="taishan-effect" data-section="taishan-effect">
         <SplitAbout
-          title="Why Choose Taishan"
-          description="Premium quality, professional service, and guaranteed satisfaction for every project."
-          tag="The Taishan Advantage"
+          title="The Taishan Effect"
+          description="Why homeowners choose Taishan Construction for their premium hardscape and construction projects."
+          tag="Why Choose Taishan"
           tagAnimation="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -163,13 +155,19 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           bulletPoints={[
             {
-              title: "6-Year Warranty",              description: "Complete coverage and peace of mind on all materials and workmanship",              icon: Shield
+              title: "Free 3D Project Visualization",              description: "See your complete project before construction begins with our professional rendering service",              icon: Eye
             },
             {
-              title: "10,000 sq ft Showroom",              description: "Explore real samples and design options in person to make confident selections",              icon: Building2
+              title: "Professional Project Planning",              description: "Detailed timelines, material specifications, and structured installation processes",              icon: CheckCircle2
             },
             {
-              title: "Free 3D Design Technology",              description: "See your complete project before construction begins with professional renderings",              icon: Eye
+              title: "Outdoor Material Showroom",              description: "Explore real samples and design options in person to make confident material selections",              icon: Palette
+            },
+            {
+              title: "Experienced Installation Teams",              description: "Certified professionals with years of expertise in premium hardscape installation",              icon: Users
+            },
+            {
+              title: "Clear Communication & Timelines",              description: "Transparent updates throughout your project with professional project management",              icon: MessageCircle
             }
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1"
@@ -184,8 +182,8 @@ export default function LandingPage() {
 
       <div id="3d-design" data-section="3d-design">
         <FeatureHoverPattern
-          title="Experience Breathtaking 3D Design Technology"
-          description="Taishan Construction offers complimentary 3D project renderings with a custom client portal where you can view your design, track progress, and access project documents anytime, anywhere. Visualize your driveway, backyard, or porch before construction begins with crystal-clear photorealistic renderings."
+          title="See Your Project Before We Build It"
+          description="Taishan Construction offers complimentary 3D project renderings so you can visualize your driveway, backyard, or porch before construction begins. This allows homeowners to make confident decisions before investing in their project."
           tag="3D Design Technology"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
@@ -193,10 +191,6 @@ export default function LandingPage() {
             {
               icon: Eye,
               title: "Photorealistic Renderings",              description: "Crystal-clear 3D visualizations showing materials, lighting, landscaping, and final details",              button: { text: "Get Free 3D Design", href: "#contact" }
-            },
-            {
-              icon: Calendar,
-              title: "Custom Client Portal",              description: "Access your project anytime with dedicated portal for designs, progress updates, and documentation"
             },
             {
               icon: ArrowRightLeft,
