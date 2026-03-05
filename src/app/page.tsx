@@ -121,23 +121,8 @@ export default function LandingPage() {
           tag="Luxury Construction"
           tagIcon={Building2}
           background={{ variant: "plain" }}
-          mediaItems={[
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Construction detail"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1",              imageAlt: "Project showcase"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772751184333-vby3bqvq.png",              imageAlt: "Taishan Gallery"
-            }
-          ]}
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1"
+          imageAlt="Premium project showcase"
           buttons={[
             { text: "Get Your Free 3D Design", href: "#contact" },
             { text: "Visit Our Showroom", href: "#showroom" }
