@@ -11,8 +11,81 @@ import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCar
 import ContactFaq from '@/components/sections/contact/ContactFaq';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import { Building2, Eye, CheckCircle2, Palette, Users, MessageCircle, Sparkles, ArrowRightLeft, Cog, Footprints, Home, Zap, Shield, Hammer, Trees, Droplet, Frame, Lightbulb, Crown, Phone } from 'lucide-react';
+import React, { useState } from 'react';
+
+interface BeforeAfterImagePair {
+  beforeSrc: string;
+  afterSrc: string;
+  title: string;
+}
+
+const BeforeAfterCard: React.FC<{
+  pair: BeforeAfterImagePair;
+  isHovered: boolean;
+}> = ({ pair, isHovered }) => {
+  const [sliderPosition, setSliderPosition] = useState(50);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const newPosition = ((e.clientX - rect.left) / rect.width) * 100;
+    setSliderPosition(Math.max(0, Math.min(100, newPosition)));
+  };
+
+  return (
+    <div
+      className="relative w-full h-64 rounded-lg overflow-hidden cursor-col-resize bg-gray-900"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={() => setSliderPosition(50)}
+    >
+      <div className="absolute inset-0">
+        <img
+          src={pair.afterSrc}
+          alt="After"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        className="absolute inset-0 overflow-hidden"
+        style={{ width: `${sliderPosition}%` }}
+      >
+        <img
+          src={pair.beforeSrc}
+          alt="Before"
+          className="w-full h-full object-cover"
+          style={{ width: `${(100 / sliderPosition) * 100}%` }}
+        />
+      </div>
+      <div
+        className="absolute top-0 bottom-0 w-1 bg-white shadow-lg transition-colors"
+        style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
+      >
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+          <ArrowRightLeft size={16} className="text-gray-900" />
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-3">
+        <p className="text-white text-sm font-semibold">{pair.title}</p>
+      </div>
+    </div>
+  );
+};
 
 export default function LandingPage() {
+  const [servicesHoveredCard, setServicesHoveredCard] = useState<string | null>(null);
+  const [galleryHoveredCard, setGalleryHoveredCard] = useState<string | null>(null);
+
+  const beforeAfterPairs: BeforeAfterImagePair[] = [
+    {
+      beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",      afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",      title: "Rendering vs. Completed Project"
+    },
+    {
+      beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",      afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1",      title: "3D Design to Reality"
+    },
+    {
+      beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=2",      afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=2",      title: "Luxury Interlock Installation"
+    }
+  ];
+
   return (
     <ThemeProvider
       defaultButtonVariant="text-stagger"
@@ -134,95 +207,147 @@ export default function LandingPage() {
       </div>
 
       <div id="services" data-section="services">
-        <FeatureHoverPattern
-          title="Our Services"
-          description="Premium construction and landscaping services for Toronto and the Greater Toronto Area. Each project is crafted with precision and built to last."
-          tag="Complete Solutions"
-          features={[
-            {
-              icon: Cog,
-              title: "Interlock Driveways",              description: "Professional interlock paving with premium materials and expert installation"
-            },
-            {
-              icon: Palette,
-              title: "Backyard Patios",              description: "Custom patio designs transforming outdoor living spaces into luxury retreats"
-            },
-            {
-              icon: Footprints,
-              title: "Walkways",              description: "Decorative and functional pathways connecting your property with style"
-            },
-            {
-              icon: Building2,
-              title: "Retaining Walls",              description: "Structural and aesthetic walls for landscaping and property management"
-            },
-            {
-              icon: Home,
-              title: "Natural Stone Porches",              description: "Premium stone entry features creating impressive curb appeal"
-            },
-            {
-              icon: Zap,
-              title: "Landscape Lighting",              description: "Professional outdoor lighting systems enhancing ambiance and security"
-            },
-            {
-              icon: Hammer,
-              title: "Decks",              description: "Custom wooden decks designed for durability and aesthetic appeal"
-            },
-            {
-              icon: Shield,
-              title: "Fences",              description: "Privacy fences and decorative fencing solutions for residential properties"
-            },
-            {
-              icon: Trees,
-              title: "Rock Beds & Landscaping",              description: "Landscape design elements that enhance property value and curb appeal"
-            },
-            {
-              icon: Droplet,
-              title: "Basement Waterproofing",              description: "Professional waterproofing solutions protecting your foundation and home"
-            },
-            {
-              icon: Frame,
-              title: "Interior Renovations",              description: "Premium interior construction and renovation services for Toronto homes"
-            }
-          ]}
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          tagAnimation="slide-up"
-          cardTitleClassName="text-5xl font-bold mb-4"
-        />
+        <div className="px-6 lg:px-12 py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Complete Solutions</p>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Services</h2>
+              <p className="text-lg text-foreground/80">Premium construction and landscaping services for Toronto and the Greater Toronto Area. Each project is crafted with precision and built to last.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  id: "interlock",                  icon: Cog,
+                  title: "Interlock Driveways",                  description: "Professional interlock paving with premium materials and expert installation"
+                },
+                {
+                  id: "patios",                  icon: Palette,
+                  title: "Backyard Patios",                  description: "Custom patio designs transforming outdoor living spaces into luxury retreats"
+                },
+                {
+                  id: "walkways",                  icon: Footprints,
+                  title: "Walkways",                  description: "Decorative and functional pathways connecting your property with style"
+                },
+                {
+                  id: "retaining",                  icon: Building2,
+                  title: "Retaining Walls",                  description: "Structural and aesthetic walls for landscaping and property management"
+                },
+                {
+                  id: "porches",                  icon: Home,
+                  title: "Natural Stone Porches",                  description: "Premium stone entry features creating impressive curb appeal"
+                },
+                {
+                  id: "lighting",                  icon: Zap,
+                  title: "Landscape Lighting",                  description: "Professional outdoor lighting systems enhancing ambiance and security"
+                }
+              ].map((service) => (
+                <div
+                  key={service.id}
+                  className="relative group"
+                  onMouseEnter={() => setServicesHoveredCard(service.id)}
+                  onMouseLeave={() => setServicesHoveredCard(null)}
+                >
+                  <div className="p-6 rounded-lg border border-accent/20 bg-card hover:border-primary-cta/40 transition-all duration-300">
+                    <service.icon className="w-8 h-8 text-primary-cta mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                    <p className="text-foreground/70 text-sm">{service.description}</p>
+                  </div>
+                  {servicesHoveredCard === service.id && (
+                    <div className="absolute inset-0 rounded-lg bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                      <div className="text-center text-white p-4">
+                        <p className="font-semibold">See examples of this service</p>
+                        <p className="text-sm text-white/80">in our project gallery</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-card rounded-lg p-8 border border-accent/20">
+              <h3 className="text-2xl font-bold mb-6">Interlock Driveway Showcase</h3>
+              <p className="text-foreground/80 mb-8">Hover over the slider to see our photorealistic 3D renderings compared to actual completed projects:</p>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {beforeAfterPairs.map((pair, index) => (
+                  <BeforeAfterCard
+                    key={index}
+                    pair={pair}
+                    isHovered={galleryHoveredCard === `service-${index}`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="gallery" data-section="gallery">
-        <BlogCardThree
-          title="Project Gallery"
-          description="Explore our portfolio of premium hardscape and construction projects across the GTA."
-          tag="Portfolio Showcase"
-          tagAnimation="slide-up"
-          blogs={[
-            {
-              id: "project-1",              category: "Premium Projects",              title: "Luxury Residential Development",              excerpt: "High-end construction showcasing precision craftsmanship and attention to detail",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=2",              imageAlt: "Luxury residential project",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            },
-            {
-              id: "project-2",              category: "Premium Projects",              title: "Contemporary Hardscape Design",              excerpt: "Large format pavers with sophisticated layout and professional finishing",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=2",              imageAlt: "Contemporary hardscape design",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            },
-            {
-              id: "project-3",              category: "Premium Projects",              title: "Luxury Outdoor Living Space",              excerpt: "Complete outdoor transformation with premium materials and expert installation",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=2",              imageAlt: "Luxury outdoor living space",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            },
-            {
-              id: "project-4",              category: "Premium Projects",              title: "Premium Patio Entertainment Area",              excerpt: "Multi-level design with integrated features and ambient lighting",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=3",              imageAlt: "Premium patio area",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            },
-            {
-              id: "project-5",              category: "Premium Projects",              title: "Natural Stone Entry Design",              excerpt: "Custom stone work creating impressive curb appeal and property value",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=3",              imageAlt: "Natural stone entry design",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            },
-            {
-              id: "project-6",              category: "Premium Projects",              title: "Professional Landscape Installation",              excerpt: "Complete landscape design and installation enhancing property flow",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=3",              imageAlt: "Professional landscape design",              authorName: "Taishan Team",              authorAvatar: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg",              date: "2024"
-            }
-          ]}
-          animationType="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          cardTitleClassName="text-5xl font-bold mb-4"
-        />
+        <div className="px-6 lg:px-12 py-16 lg:py-24">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-12">
+              <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Portfolio Showcase</p>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Project Gallery</h2>
+              <p className="text-lg text-foreground/80">Explore our portfolio of premium hardscape and construction projects across the GTA.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                {
+                  id: "project-1",                  title: "Luxury Residential Development",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=2",                  description: "High-end construction showcasing precision craftsmanship and attention to detail"
+                },
+                {
+                  id: "project-2",                  title: "Contemporary Hardscape Design",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=2",                  description: "Large format pavers with sophisticated layout and professional finishing"
+                },
+                {
+                  id: "project-3",                  title: "Luxury Outdoor Living Space",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=3",                  description: "Complete outdoor transformation with premium materials and expert installation"
+                },
+                {
+                  id: "project-4",                  title: "Premium Patio Entertainment Area",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=3",                  description: "Multi-level design with integrated features and ambient lighting"
+                },
+                {
+                  id: "project-5",                  title: "Natural Stone Entry Design",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=4",                  description: "Custom stone work creating impressive curb appeal and property value"
+                },
+                {
+                  id: "project-6",                  title: "Professional Landscape Installation",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  description: "Complete landscape design and installation enhancing property flow"
+                }
+              ].map((project) => (
+                <div
+                  key={project.id}
+                  className="group"
+                  onMouseEnter={() => setGalleryHoveredCard(project.id)}
+                  onMouseLeave={() => setGalleryHoveredCard(null)}
+                >
+                  <div className="rounded-lg overflow-hidden border border-accent/20">
+                    {galleryHoveredCard === project.id ? (
+                      <BeforeAfterCard
+                        pair={{
+                          beforeSrc: project.beforeSrc,
+                          afterSrc: project.afterSrc,
+                          title: project.title
+                        }}
+                        isHovered={true}
+                      />
+                    ) : (
+                      <div className="h-64 relative overflow-hidden">
+                        <img
+                          src={project.afterSrc}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-4 flex flex-col justify-end">
+                          <p className="text-xs text-white/70 mb-2">{project.category}</p>
+                          <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                          <p className="text-sm text-white/80 mt-2">{project.description}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="showroom" data-section="showroom">
