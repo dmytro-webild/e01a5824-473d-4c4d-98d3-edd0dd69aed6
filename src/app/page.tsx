@@ -130,7 +130,6 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           buttons={[{ text: "Request Your Free 3D Design", href: "#contact" }]}
           cardTitleClassName="text-5xl font-bold mb-4"
-          cardDescriptionClassName="text-lg leading-relaxed mb-8"
         />
       </div>
 
@@ -190,7 +189,6 @@ export default function LandingPage() {
           useInvertedBackground={false}
           tagAnimation="slide-up"
           cardTitleClassName="text-5xl font-bold mb-4"
-          cardDescriptionClassName="text-lg leading-relaxed mb-8"
         />
       </div>
 
@@ -224,7 +222,6 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           cardTitleClassName="text-5xl font-bold mb-4"
-          cardDescriptionClassName="text-lg leading-relaxed mb-8"
         />
       </div>
 
