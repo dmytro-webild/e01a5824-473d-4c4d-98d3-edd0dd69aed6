@@ -8,7 +8,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."};
+  title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."
+};
 
 export default function RootLayout({
   children,
