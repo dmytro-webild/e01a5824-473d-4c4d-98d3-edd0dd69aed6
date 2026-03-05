@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
+import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
@@ -115,14 +115,29 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero" className="pt-20">
-        <HeroBillboardScroll
+        <HeroBillboardCarousel
           title="Toronto's Trusted Interlock & Construction Specialists"
           description="Premium landscaping and construction services across the GTA. Designed with precision. Built to last."
           tag="Luxury Construction"
           tagIcon={Building2}
           background={{ variant: "plain" }}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1"
-          imageAlt="Premium project showcase"
+          mediaItems={[
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Construction detail"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1",              imageAlt: "Project showcase"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772751184333-vby3bqvq.png",              imageAlt: "Taishan Gallery"
+            }
+          ]}
           buttons={[
             { text: "Get Your Free 3D Design", href: "#contact" },
             { text: "Visit Our Showroom", href: "#showroom" }
