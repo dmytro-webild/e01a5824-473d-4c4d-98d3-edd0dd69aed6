@@ -48,7 +48,7 @@ export default function LandingPage() {
           background={{ variant: "plain" }}
           mediaItems={[
             {
-              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg",              imageAlt: "Luxury interlock driveway installation"
+              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg?_wi=1",              imageAlt: "Luxury interlock driveway installation"
             },
             {
               imageSrc: "http://img.b2bpic.net/free-photo/old-woman-doing-fitness-exercises_23-2149565528.jpg",              imageAlt: "Premium patio transformation"
@@ -97,7 +97,7 @@ export default function LandingPage() {
               title: "Clear Communication & Timelines",              description: "Transparent updates throughout your project with professional project management",              icon: MessageCircle
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/high-angle-clay-pieces-arrangement_23-2149480221.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/high-angle-clay-pieces-arrangement_23-2149480221.jpg?_wi=1"
           imageAlt="Material showroom display"
           buttons={[{ text: "Start Your Project Plan", href: "#contact" }]}
           buttonAnimation="slide-up"
@@ -200,16 +200,16 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           blogs={[
             {
-              id: "driveway-1",              category: "Driveways",              title: "Modern Interlock Driveway Transformation",              excerpt: "Premium herringbone pattern interlock installation with integrated lighting",              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg",              imageAlt: "Modern interlock driveway",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
+              id: "driveway-1",              category: "Driveways",              title: "Modern Interlock Driveway Transformation",              excerpt: "Premium herringbone pattern interlock installation with integrated lighting",              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg?_wi=2",              imageAlt: "Modern interlock driveway",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
             },
             {
-              id: "driveway-2",              category: "Driveways",              title: "Contemporary Driveway Design",              excerpt: "Large format pavers with sophisticated layout and professional finishing",              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg",              imageAlt: "Contemporary driveway design",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
+              id: "driveway-2",              category: "Driveways",              title: "Contemporary Driveway Design",              excerpt: "Large format pavers with sophisticated layout and professional finishing",              imageSrc: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg?_wi=3",              imageAlt: "Contemporary driveway design",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
             },
             {
-              id: "backyard-1",              category: "Backyards",              title: "Luxury Backyard Living Space",              excerpt: "Complete outdoor renovation with patio, lighting, and landscaping",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-trees-thai-style-decoration_1258-111445.jpg",              imageAlt: "Luxury backyard patio",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
+              id: "backyard-1",              category: "Backyards",              title: "Luxury Backyard Living Space",              excerpt: "Complete outdoor renovation with patio, lighting, and landscaping",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-trees-thai-style-decoration_1258-111445.jpg?_wi=1",              imageAlt: "Luxury backyard patio",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
             },
             {
-              id: "backyard-2",              category: "Backyards",              title: "Premium Patio Entertainment Area",              excerpt: "Multi-level patio with integrated seating and ambient lighting design",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-trees-thai-style-decoration_1258-111445.jpg",              imageAlt: "Premium patio area",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
+              id: "backyard-2",              category: "Backyards",              title: "Premium Patio Entertainment Area",              excerpt: "Multi-level patio with integrated seating and ambient lighting design",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-luxury-swimming-pool-with-palm-trees-thai-style-decoration_1258-111445.jpg?_wi=2",              imageAlt: "Premium patio area",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
             },
             {
               id: "porch-1",              category: "Porches",              title: "Natural Stone Entry Porch",              excerpt: "Custom stone work creating impressive curb appeal and property value",              imageSrc: "http://img.b2bpic.net/free-photo/vintage-background-steps-turquoise-doors-ancient-architecture_169016-20034.jpg",              imageAlt: "Natural stone porch entry",              authorName: "Taishan Team",              authorAvatar: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              date: "2024"
@@ -249,7 +249,7 @@ export default function LandingPage() {
               title: "Premium Product Selection",              description: "Access to exclusive high-end materials and professional-grade landscape lighting",              icon: Crown
             }
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/high-angle-clay-pieces-arrangement_23-2149480221.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/high-angle-clay-pieces-arrangement_23-2149480221.jpg?_wi=2"
           imageAlt="Material showroom samples and display"
           buttons={[{ text: "Book a Showroom Visit", href: "#contact" }]}
           buttonAnimation="slide-up"
@@ -294,22 +294,22 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           testimonials={[
             {
-              id: "1",              title: "Complete Driveway Transformation",              quote: "Taishan's team transformed our driveway into something spectacular. The 3D design preview was incredibly helpful, and the installation was professional from start to finish. Highly recommended for anyone in Toronto looking for premium hardscape work.",              name: "Jennifer Chen",              role: "Toronto Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "Jennifer Chen"
+              id: "1",              title: "Complete Driveway Transformation",              quote: "Taishan's team transformed our driveway into something spectacular. The 3D design preview was incredibly helpful, and the installation was professional from start to finish. Highly recommended for anyone in Toronto looking for premium hardscape work.",              name: "Jennifer Chen",              role: "Toronto Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=1",              imageAlt: "Jennifer Chen"
             },
             {
-              id: "2",              title: "Outstanding Patio Project",              quote: "We couldn't be happier with our new backyard patio. The team listened to our vision, created perfect 3D renderings, and delivered exactly what we envisioned. The attention to detail and timeline management were exceptional.",              name: "Michael Rodriguez",              role: "Vaughan Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "Michael Rodriguez"
+              id: "2",              title: "Outstanding Patio Project",              quote: "We couldn't be happier with our new backyard patio. The team listened to our vision, created perfect 3D renderings, and delivered exactly what we envisioned. The attention to detail and timeline management were exceptional.",              name: "Michael Rodriguez",              role: "Vaughan Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=2",              imageAlt: "Michael Rodriguez"
             },
             {
-              id: "3",              title: "Professional & Reliable",              quote: "From the initial consultation through completion, Taishan showed true professionalism. Their material showroom helped us choose the perfect stone for our porch. The finished result exceeded our expectations.",              name: "Sarah Thompson",              role: "North York Resident",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "Sarah Thompson"
+              id: "3",              title: "Professional & Reliable",              quote: "From the initial consultation through completion, Taishan showed true professionalism. Their material showroom helped us choose the perfect stone for our porch. The finished result exceeded our expectations.",              name: "Sarah Thompson",              role: "North York Resident",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=3",              imageAlt: "Sarah Thompson"
             },
             {
-              id: "4",              title: "Worth Every Investment",              quote: "This is clearly a luxury construction company, not just a contractor. The entire process felt premium, from the design consultation to the final walkthrough. Our property value and curb appeal have both dramatically improved.",              name: "David Park",              role: "Markham Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "David Park"
+              id: "4",              title: "Worth Every Investment",              quote: "This is clearly a luxury construction company, not just a contractor. The entire process felt premium, from the design consultation to the final walkthrough. Our property value and curb appeal have both dramatically improved.",              name: "David Park",              role: "Markham Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=4",              imageAlt: "David Park"
             },
             {
-              id: "5",              title: "Exceptional Waterproofing Work",              quote: "We had basement waterproofing done by Taishan and couldn't be happier. Their expertise was evident, and our foundation is now completely protected. Highly professional team.",              name: "Lisa Martinez",              role: "Richmond Hill Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "Lisa Martinez"
+              id: "5",              title: "Exceptional Waterproofing Work",              quote: "We had basement waterproofing done by Taishan and couldn't be happier. Their expertise was evident, and our foundation is now completely protected. Highly professional team.",              name: "Lisa Martinez",              role: "Richmond Hill Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=5",              imageAlt: "Lisa Martinez"
             },
             {
-              id: "6",              title: "Complete Backyard Overhaul",              quote: "Taishan handled our entire backyard renovation including patio, landscape lighting, and landscaping. The coordination was seamless, and the final result is absolutely stunning. We now have the backyard of our dreams.",              name: "Robert Williams",              role: "Scarborough Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg",              imageAlt: "Robert Williams"
+              id: "6",              title: "Complete Backyard Overhaul",              quote: "Taishan handled our entire backyard renovation including patio, landscape lighting, and landscaping. The coordination was seamless, and the final result is absolutely stunning. We now have the backyard of our dreams.",              name: "Robert Williams",              role: "Scarborough Homeowner",              imageSrc: "http://img.b2bpic.net/free-photo/close-up-portrait-young-handsome-successful-man_1163-5475.jpg?_wi=6",              imageAlt: "Robert Williams"
             }
           ]}
           textboxLayout="default"
