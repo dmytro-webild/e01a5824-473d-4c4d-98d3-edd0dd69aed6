@@ -1,57 +1,25 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
-import { Inter } from "next/font/google";
-import { Montserrat } from "next/font/google";
+import { Manrope } from "next/font/google";
+import "./styles/variables.css";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",  subsets: ["latin"],
+const manrope = Manrope({
+  variable: "--font-manrope",  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Taishan Construction | Premium Interlock & Hardscape Toronto",  description: "Premium interlock driveways, patios, and construction services for Toronto and the GTA. Free 3D design. Fully insured. 1000+ projects completed.",  keywords: "Toronto interlock contractor, interlock driveway Toronto, luxury landscaping GTA, backyard patio Toronto, retaining wall contractor, construction company Toronto, hardscape contractor",  metadataBase: new URL("https://taishanconstruction.com"),
-  alternates: {
-    canonical: "https://taishanconstruction.com"},
-  openGraph: {
-    title: "Taishan Construction | Premium Interlock & Hardscape Services",    description: "Transform your Toronto property with premium interlock driveways, patios, and construction. Free 3D design consultation.",    url: "https://taishanconstruction.com",    siteName: "Taishan Construction",    type: "website",    images: [
-      {
-        url: "http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg",        alt: "Luxury interlock driveway installation Toronto"},
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Taishan Construction | Premium Interlock & Hardscape",    description: "Premium construction services for Toronto. Free 3D design. Fully insured. 1000+ projects.",    images: ["http://img.b2bpic.net/free-photo/natural-grass-close-up_23-2148858213.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} ${montserrat.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={`${manrope.variable} antialiased`}>
+        {children}
+      
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1419,7 +1387,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
