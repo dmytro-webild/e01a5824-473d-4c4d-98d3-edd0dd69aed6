@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Manrope } from "next/font/google";
 import "./styles/variables.css";
-import "./styles/base.css";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({
+  variable: "--font-manrope",  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "Taishan Construction",  description: "Premium landscaping and construction services for Toronto and the GTA"};
+  title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."
+};
 
 export default function RootLayout({
   children,
@@ -16,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={`${manrope.variable} antialiased`}>
+        {children}
+      
         <script
           dangerouslySetInnerHTML={{
             __html: `
