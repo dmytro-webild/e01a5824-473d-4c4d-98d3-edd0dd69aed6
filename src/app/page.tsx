@@ -174,7 +174,7 @@ export default function LandingPage() {
       <div id="3d-design" data-section="3d-design">
         <FeatureHoverPattern
           title="See Your Project Before a Single Brick Is Laid"
-          description="Using advanced 3D visualization, we bring your project to life before construction begins—so you know exactly what to expect before a single brick is laid."
+          description=""
           tag="Visualization Technology"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
@@ -210,11 +210,11 @@ export default function LandingPage() {
               {[
                 {
                   id: "interlock",                  icon: Cog,
-                  title: "Architectural Interlock Driveways",                  description: "Premium interlock paving systems designed with precision and executed with masterful craftsmanship"
+                  title: "Interlock Driveways",                  description: "Premium interlock paving systems designed with precision and executed with masterful craftsmanship"
                 },
                 {
                   id: "patios",                  icon: Palette,
-                  title: "Custom Outdoor Sanctuaries",                  description: "Thoughtfully designed patio spaces transforming properties into luxurious outdoor experiences"
+                  title: "Outdoor Living Spaces",                  description: "Custom outdoor living areas designed for relaxing, entertaining, and extending the functionality of your backyard."
                 },
                 {
                   id: "walkways",                  icon: Footprints,
@@ -257,8 +257,8 @@ export default function LandingPage() {
             </div>
 
             <div className="bg-card rounded-lg p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6">Design Excellence Gallery</h3>
-              <p className="text-foreground/80 mb-8">Hover to compare architectural renderings with realized projects:</p>
+              <h3 className="text-2xl font-bold mb-6">From Design to Reality.</h3>
+              <p className="text-foreground/80 mb-8">Compare our 3D designs with the finished construction:</p>
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 {beforeAfterPairs.map((pair, index) => (
                   <BeforeAfterCard
@@ -278,8 +278,8 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Project Portfolio</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Architectural Commissions</h2>
-              <p className="text-lg text-foreground/80">A curated selection of premium outdoor design projects across the Greater Toronto Area, each representing our commitment to transformative craftsmanship.</p>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Featured Projects</h2>
+              <p className="text-lg text-foreground/80">Explore some of our recent driveway, patio, and backyard transformation projects across Toronto and the GTA.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -343,7 +343,8 @@ export default function LandingPage() {
 
       <div id="showroom" data-section="showroom">
         <SplitAbout
-          title="The Design Experience Showroom"
+          title="Visit Our 
+10,000 SQFT Design Showroom"
           description="Step into our curated space to explore premium materials, finishes, and design possibilities. Our expert team guides you through every option to refine your architectural vision."
           tag="Material Consultation"
           tagAnimation="slide-up"
