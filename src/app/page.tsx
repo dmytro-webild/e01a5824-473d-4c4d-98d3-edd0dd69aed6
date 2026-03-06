@@ -115,24 +115,24 @@ export default function LandingPage() {
 
       <div id="hero" data-section="hero">
         <HeroSplitDualMedia
-          title="Designing Outdoor Spaces Worth Coming Home To"
-          description="Architectural precision meets refined craftsmanship. Premium hardscaping and custom construction throughout the Greater Toronto Area, where every detail is thoughtfully designed and expertly executed."
-          tag="Luxury Outdoor Architecture"
+          title="Toronto's Trusted Interlock & Construction Specialists"
+          description="Premium landscaping and construction services across the GTA. Designed with precision. Built to last."
+          tag="Luxury Construction"
           tagIcon={Building2}
           background={{ variant: "plain" }}
           mediaItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Architectural outdoor space showcase"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Premium hardscape design detail"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
             }
           ]}
           rating={5}
           ratingText="1000+ Projects Completed"
           buttons={[
-            { text: "Start Your Project", href: "#contact" },
-            { text: "View Portfolio", href: "#gallery" }
+            { text: "Get Your Free 3D Design", href: "#contact" },
+            { text: "Visit Our Showroom", href: "#showroom" }
           ]}
           buttonAnimation="slide-up"
           mediaAnimation="slide-up"
@@ -146,9 +146,9 @@ export default function LandingPage() {
 
       <div id="taishan-effect" data-section="taishan-effect">
         <SplitAbout
-          title="The Taishan Signature Approach"
-          description="A refined process combining strategic planning, photorealistic 3D visualization, and curated material selection. We design with intention, visualize with precision, and build with expertise."
-          tag="Our Methodology"
+          title="The Taishan Effect"
+          description="Why homeowners choose Taishan Construction for their premium hardscape and construction projects."
+          tag="Why Choose Taishan"
           tagAnimation="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -156,24 +156,24 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           bulletPoints={[
             {
-              title: "Strategic Planning",              description: "Detailed site analysis and master planning that transforms your vision into a cohesive outdoor architecture",              icon: Eye
+              title: "Free 3D Project Visualization",              description: "See your complete project before construction begins with our professional rendering service",              icon: Eye
             },
             {
-              title: "3D Visualization",              description: "Photorealistic renderings allowing you to experience your project before construction, ensuring complete confidence in the design",              icon: CheckCircle2
+              title: "Professional Project Planning",              description: "Detailed timelines, material specifications, and structured installation processes",              icon: CheckCircle2
             },
             {
-              title: "Material Curation",              description: "Carefully selected premium materials showcased in our outdoor showroom, chosen for both aesthetic excellence and lasting performance",              icon: Palette
+              title: "Outdoor Material Showroom",              description: "Explore real samples and design options in person to make confident material selections",              icon: Palette
             },
             {
-              title: "Expert Execution",              description: "Certified installation teams with years of experience in luxury hardscape and construction projects",              icon: Users
+              title: "Experienced Installation Teams",              description: "Certified professionals with years of expertise in premium hardscape installation",              icon: Users
             },
             {
-              title: "Refined Communication",              description: "Transparent project management with detailed timelines and consistent updates throughout construction",              icon: MessageCircle
+              title: "Clear Communication & Timelines",              description: "Transparent updates throughout your project with professional project management",              icon: MessageCircle
             }
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1"
-          imageAlt="Premium material showcase and design consultation"
-          buttons={[{ text: "Explore Our Process", href: "#process" }]}
+          imageAlt="Material showroom display"
+          buttons={[{ text: "Start Your Project Plan", href: "#contact" }]}
           buttonAnimation="slide-up"
           titleClassName="text-5xl font-bold mb-4"
           descriptionClassName="text-lg leading-relaxed mb-8"
@@ -183,19 +183,19 @@ export default function LandingPage() {
 
       <div id="3d-design" data-section="3d-design">
         <FeatureHoverPattern
-          title="Step Into Your Future Backyard"
-          description="Experience the emotional transformation before we build. Our complimentary 3D architectural renderings empower you to visualize every detail—from material textures to landscape integration—making confident design decisions with complete clarity."
-          tag="Visualization Technology"
+          title="See Your Project Before We Build It"
+          description="Taishan Construction offers complimentary 3D project renderings so you can visualize your driveway, backyard, or porch before construction begins. This allows homeowners to make confident decisions before investing in their project."
+          tag="3D Design Technology"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           features={[
             {
               icon: Eye,
-              title: "Photorealistic 3D Renderings",              description: "Crystal-clear architectural visualizations showcasing materials, proportions, lighting, and surrounding landscape integration",              button: { text: "Get Free 3D Design", href: "#contact" }
+              title: "Photorealistic Renderings",              description: "Crystal-clear 3D visualizations showing materials, lighting, landscaping, and final details",              button: { text: "Get Free 3D Design", href: "#contact" }
             },
             {
               icon: ArrowRightLeft,
-              title: "Before & After Experience",              description: "Side-by-side visualizations showing your current property and the completed outdoor sanctuary of your dreams"
+              title: "Before & After Comparisons",              description: "Side-by-side views showing current property and your completed dream project transformation"
             }
           ]}
           animationType="slide-up"
@@ -208,80 +208,42 @@ export default function LandingPage() {
       </div>
 
       <div id="services" data-section="services">
-        <div className="px-6 lg:px-12 py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-12">
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Design-Focused Solutions</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Architectural Services</h2>
-              <p className="text-lg text-foreground/80">Premium hardscape architecture and construction services throughout Toronto and the Greater Toronto Area. Each project reflects refined design principles and masterful execution.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {[
-                {
-                  id: "interlock",                  icon: Cog,
-                  title: "Architectural Interlock Driveways",                  description: "Custom interlock design with premium materials, proportional patterns, and professional installation"
-                },
-                {
-                  id: "patios",                  icon: Palette,
-                  title: "Designer Backyard Patios",                  description: "Architectural patio design transforming outdoor living into refined entertaining spaces"
-                },
-                {
-                  id: "walkways",                  icon: Footprints,
-                  title: "Architectural Walkways",                  description: "Thoughtfully designed pathways connecting properties with sophisticated material selection"
-                },
-                {
-                  id: "retaining",                  icon: Building2,
-                  title: "Structural Retaining Walls",                  description: "Engineering-focused wall design combining structure and aesthetic refinement"
-                },
-                {
-                  id: "porches",                  icon: Home,
-                  title: "Natural Stone Entry Porches",                  description: "Premium stone architectural features creating distinguished curb appeal"
-                },
-                {
-                  id: "lighting",                  icon: Zap,
-                  title: "Architectural Landscape Lighting",                  description: "Professional outdoor lighting design enhancing ambiance and architectural details"
-                }
-              ].map((service) => (
-                <div
-                  key={service.id}
-                  className="relative group"
-                  onMouseEnter={() => setServicesHoveredCard(service.id)}
-                  onMouseLeave={() => setServicesHoveredCard(null)}
-                >
-                  <div className="p-6 rounded-lg border border-accent/20 bg-card hover:border-primary-cta/40 transition-all duration-300">
-                    <service.icon className="w-8 h-8 text-primary-cta mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-foreground/70 text-sm">{service.description}</p>
-                  </div>
-                  {servicesHoveredCard === service.id && (
-                    <div className="absolute inset-0 rounded-lg bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <div className="text-center text-white p-4">
-                        <p className="font-semibold">See examples of this service</p>
-                        <p className="text-sm text-white/80">in our project gallery</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-card rounded-lg p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6">Architectural Interlock Showcase</h3>
-              <p className="text-foreground/80 mb-8">Hover over the slider to compare our 3D architectural renderings with completed installations:</p>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                {beforeAfterPairs.map((pair, index) => (
-                  <BeforeAfterCard
-                    key={index}
-                    pair={pair}
-                    isHovered={galleryHoveredCard === `service-${index}`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <FeatureHoverPattern
+          title="Our Services"
+          description="Premium construction and landscaping services for Toronto and the Greater Toronto Area. Each project is crafted with precision and built to last."
+          tag="Complete Solutions"
+          tagAnimation="slide-up"
+          features={[
+            {
+              icon: Cog,
+              title: "Interlock Driveways",              description: "Professional interlock paving with premium materials and expert installation"
+            },
+            {
+              icon: Palette,
+              title: "Backyard Patios",              description: "Custom patio designs transforming outdoor living spaces into luxury retreats"
+            },
+            {
+              icon: Footprints,
+              title: "Walkways",              description: "Decorative and functional pathways connecting your property with style"
+            },
+            {
+              icon: Building2,
+              title: "Retaining Walls",              description: "Structural and aesthetic walls for landscaping and property management"
+            },
+            {
+              icon: Home,
+              title: "Natural Stone Porches",              description: "Premium stone entry features creating impressive curb appeal"
+            },
+            {
+              icon: Zap,
+              title: "Landscape Lighting",              description: "Professional outdoor lighting systems enhancing ambiance and security"
+            }
+          ]}
+          animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          buttonAnimation="slide-up"
+        />
       </div>
 
       <div id="gallery" data-section="gallery">
@@ -289,30 +251,29 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Portfolio Showcase</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Completed Projects</h2>
-              <p className="text-lg text-foreground/80">Explore our portfolio of architectural hardscape and construction projects throughout the Greater Toronto Area.
-              </p>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Project Gallery</h2>
+              <p className="text-lg text-foreground/80">Explore our portfolio of premium hardscape and construction projects across the GTA.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  id: "project-1",                  title: "Luxury Architectural Installation",                  type: "Interlock Driveway",                  location: "North York, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=2",                  description: "Premium hardscape installation showcasing architectural precision and craftsmanship"
+                  id: "project-1",                  title: "Luxury Residential Development",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=2",                  description: "High-end construction showcasing precision craftsmanship and attention to detail"
                 },
                 {
-                  id: "project-2",                  title: "Contemporary Hardscape Design",                  type: "Patio Installation",                  location: "Vaughan, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=2",                  description: "Large format pavers with sophisticated design and professional finishing"
+                  id: "project-2",                  title: "Contemporary Hardscape Design",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=2",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=2",                  description: "Large format pavers with sophisticated layout and professional finishing"
                 },
                 {
-                  id: "project-3",                  title: "Refined Outdoor Living Design",                  type: "Backyard Transformation",                  location: "Toronto, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=3",                  description: "Complete outdoor transformation with premium materials and expert installation"
+                  id: "project-3",                  title: "Luxury Outdoor Living Space",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=3",                  description: "Complete outdoor transformation with premium materials and expert installation"
                 },
                 {
-                  id: "project-4",                  title: "Luxury Entertainment Patio",                  type: "Architectural Patio",                  location: "Markham, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=3",                  description: "Multi-level design with integrated features and ambient lighting"
+                  id: "project-4",                  title: "Premium Patio Entertainment Area",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=3",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=3",                  description: "Multi-level design with integrated features and ambient lighting"
                 },
                 {
-                  id: "project-5",                  title: "Natural Stone Architectural Entry",                  type: "Stone Porch",                  location: "Richmond Hill, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=4",                  description: "Custom stone architectural work creating distinguished curb appeal"
+                  id: "project-5",                  title: "Natural Stone Entry Design",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=4",                  description: "Custom stone work creating impressive curb appeal and property value"
                 },
                 {
-                  id: "project-6",                  title: "Professional Landscape Integration",                  type: "Hardscape Design",                  location: "Scarborough, ON",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  description: "Complete landscape architecture enhancing property flow and design"
+                  id: "project-6",                  title: "Professional Landscape Installation",                  category: "Premium Projects",                  beforeSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=4",                  afterSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=4",                  description: "Complete landscape design and installation enhancing property flow"
                 }
               ].map((project) => (
                 <div
@@ -339,8 +300,7 @@ export default function LandingPage() {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent p-4 flex flex-col justify-end">
-                          <p className="text-xs text-white/70 mb-1">{project.type}</p>
-                          <p className="text-xs text-white/60 mb-2">{project.location}</p>
+                          <p className="text-xs text-white/70 mb-2">{project.category}</p>
                           <h3 className="text-lg font-semibold text-white">{project.title}</h3>
                           <p className="text-sm text-white/80 mt-2">{project.description}</p>
                         </div>
@@ -357,7 +317,7 @@ export default function LandingPage() {
       <div id="showroom" data-section="showroom">
         <SplitAbout
           title="Visit Our Outdoor Material Showroom"
-          description="Experience curated materials and design inspiration in person. Compare premium interlock, natural stone, and landscape lighting solutions with our expert team before finalizing your project."
+          description="Explore real materials and design options before construction begins. Compare interlock styles, natural stone, lighting systems, and layout options with our expert team."
           tag="Showroom Experience"
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -366,21 +326,21 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           bulletPoints={[
             {
-              title: "Material Exploration",              description: "Touch and examine authentic materials, finishes, and color options for your architectural project",              icon: Eye
+              title: "Compare Materials In Person",              description: "Touch and see actual materials, finishes, and color options for your project",              icon: Eye
             },
             {
-              title: "Design Consultation",              description: "Our architectural team guides you through material selection aligned with your vision and investment",              icon: Users
+              title: "Plan With Experts",              description: "Our design team helps you make confident selections based on your vision and budget",              icon: Users
             },
             {
-              title: "Project Visualization",              description: "Combine showroom samples with 3D renderings to finalize your complete design concept",              icon: Lightbulb
+              title: "Visualize Your Project",              description: "Use our showroom samples alongside 3D renderings to finalize your design",              icon: Lightbulb
             },
             {
-              title: "Premium Collections",              description: "Exclusive access to high-end materials and professional-grade architectural lighting systems",              icon: Crown
+              title: "Premium Product Selection",              description: "Access to exclusive high-end materials and professional-grade landscape lighting",              icon: Crown
             }
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1"
-          imageAlt="Premium material showroom and design display"
-          buttons={[{ text: "Schedule Showroom Consultation", href: "#contact" }]}
+          imageAlt="Material showroom samples and display"
+          buttons={[{ text: "Book a Showroom Visit", href: "#contact" }]}
           buttonAnimation="slide-up"
           titleClassName="text-5xl font-bold mb-4"
           descriptionClassName="text-lg leading-relaxed mb-8"
@@ -389,22 +349,22 @@ export default function LandingPage() {
 
       <div id="process" data-section="process">
         <MetricCardTen
-          title="Our Architectural Process"
-          description="A refined methodology delivering premium hardscape projects with precision, transparency, and exceptional craftsmanship."
-          tag="Professional Execution"
+          title="Our Proven Process"
+          description="A structured approach to delivering premium hardscape projects on time and on budget."
+          tag="Professional Installation"
           tagAnimation="slide-up"
           metrics={[
             {
-              id: "1",              title: "Strategic Consultation",              subtitle: "Understanding your vision, site conditions, and architectural aspirations",              category: "Phase 1",              value: "Complimentary"
+              id: "1",              title: "Consultation & Assessment",              subtitle: "Understanding your vision, site conditions, and project requirements",              category: "Step 1",              value: "Free Quote"
             },
             {
-              id: "2",              title: "Architectural Design & 3D Visualization",              subtitle: "Professional renderings and detailed architectural specifications",              category: "Phase 2",              value: "Included"
+              id: "2",              title: "3D Design & Planning",              subtitle: "Professional renderings and detailed project specifications",              category: "Step 2",              value: "Included"
             },
             {
-              id: "3",              title: "Expert Installation",              subtitle: "Master craftsmen and certified teams with years of hardscape experience",              category: "Phase 3",              value: "Fully Insured"
+              id: "3",              title: "Professional Construction",              subtitle: "Expert installation with certified teams and quality materials",              category: "Step 3",              value: "Fully Insured"
             },
             {
-              id: "4",              title: "Final Inspection & Warranty",              subtitle: "Comprehensive walkthrough, final touches, and project guarantees",              category: "Phase 4",              value: "Guaranteed"
+              id: "4",              title: "Final Walkthrough & Warranty",              subtitle: "Inspection, final touches, and comprehensive project warranty",              category: "Step 4",              value: "Guaranteed"
             }
           ]}
           textboxLayout="default"
@@ -417,28 +377,28 @@ export default function LandingPage() {
 
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardTen
-          title="Trusted By Discerning Homeowners"
-          description="Hear from homeowners who invested in premium outdoor architecture and are thrilled with their Taishan experience."
+          title="Trusted By Homeowners Across the GTA"
+          description="See what our satisfied clients have to say about their Taishan Construction projects."
           tag="Client Testimonials"
           tagAnimation="slide-up"
           testimonials={[
             {
-              id: "1",              title: "Complete Driveway Transformation",              quote: "Taishan's approach to our driveway was genuinely architectural. The 3D renderings were photorealistic, and the team's attention to every detail was exceptional. This isn't just construction—it's craftsmanship. Highly recommended for anyone serious about their property investment.",              name: "Jennifer Chen",              role: "Toronto Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=2",              imageAlt: "Jennifer Chen"
+              id: "1",              title: "Complete Driveway Transformation",              quote: "Taishan's team transformed our driveway into something spectacular. The 3D design preview was incredibly helpful, and the installation was professional from start to finish. Highly recommended for anyone in Toronto looking for premium hardscape work.",              name: "Jennifer Chen",              role: "Toronto Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=2",              imageAlt: "Jennifer Chen"
             },
             {
-              id: "2",              title: "Outstanding Patio Project",              quote: "We couldn't be more pleased with our patio. The team listened intently to our vision, created stunning 3D visualizations, and delivered exactly as promised. The level of professional project management and design refinement exceeded our expectations.",              name: "Michael Rodriguez",              role: "Vaughan Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=3",              imageAlt: "Michael Rodriguez"
+              id: "2",              title: "Outstanding Patio Project",              quote: "We couldn't be happier with our new backyard patio. The team listened to our vision, created perfect 3D renderings, and delivered exactly what we envisioned. The attention to detail and timeline management were exceptional.",              name: "Michael Rodriguez",              role: "Vaughan Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=3",              imageAlt: "Michael Rodriguez"
             },
             {
-              id: "3",              title: "Professional & Refined",              quote: "From initial consultation through final inspection, Taishan demonstrated genuine professionalism and expertise. Their material showroom was instrumental in our selection process, and the finished result has truly transformed our property.",              name: "Sarah Thompson",              role: "North York Resident",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=4",              imageAlt: "Sarah Thompson"
+              id: "3",              title: "Professional & Reliable",              quote: "From the initial consultation through completion, Taishan showed true professionalism. Their material showroom helped us choose the perfect stone for our porch. The finished result exceeded our expectations.",              name: "Sarah Thompson",              role: "North York Resident",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=4",              imageAlt: "Sarah Thompson"
             },
             {
-              id: "4",              title: "Worth Every Investment",              quote: "This is clearly a luxury architectural firm, not just a contractor. The entire experience felt premium—from the design consultation to project completion. Our property value and curb appeal have both dramatically improved.",              name: "David Park",              role: "Markham Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=5",              imageAlt: "David Park"
+              id: "4",              title: "Worth Every Investment",              quote: "This is clearly a luxury construction company, not just a contractor. The entire process felt premium, from the design consultation to the final walkthrough. Our property value and curb appeal have both dramatically improved.",              name: "David Park",              role: "Markham Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=5",              imageAlt: "David Park"
             },
             {
-              id: "5",              title: "Exceptional Mastery",              quote: "We engaged Taishan for a complex multi-phase project and they handled every phase with sophistication. Their expertise was evident in every decision, and our backyard is now a true outdoor sanctuary.",              name: "Lisa Martinez",              role: "Richmond Hill Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=6",              imageAlt: "Lisa Martinez"
+              id: "5",              title: "Exceptional Waterproofing Work",              quote: "We had basement waterproofing done by Taishan and couldn't be happier. Their expertise was evident, and our foundation is now completely protected. Highly professional team.",              name: "Lisa Martinez",              role: "Richmond Hill Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=6",              imageAlt: "Lisa Martinez"
             },
             {
-              id: "6",              title: "Complete Outdoor Architecture",              quote: "Taishan orchestrated our entire backyard redesign—patio, lighting, landscaping—with seamless coordination. The finished outdoor space is absolutely stunning and has become our favorite place to spend time.",              name: "Robert Williams",              role: "Scarborough Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=7",              imageAlt: "Robert Williams"
+              id: "6",              title: "Complete Backyard Overhaul",              quote: "Taishan handled our entire backyard renovation including patio, landscape lighting, and landscaping. The coordination was seamless, and the final result is absolutely stunning. We now have the backyard of our dreams.",              name: "Robert Williams",              role: "Scarborough Homeowner",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=7",              imageAlt: "Robert Williams"
             }
           ]}
           textboxLayout="default"
@@ -450,32 +410,32 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactFaq
-          ctaTitle="Let's Create Something Exceptional"
-          ctaDescription="Begin your outdoor architectural journey with a complimentary consultation and 3D project preview."
+          ctaTitle="Ready to Transform Your Property?"
+          ctaDescription="Start your project with a free consultation and photorealistic 3D rendering."
           ctaButton={{
-            text: "Start Your Project",            href: "mailto:info@taishanconstruction.com?subject=Project%20Consultation%20Request"
+            text: "Get Free 3D Design",            href: "mailto:info@taishanconstruction.com?subject=Free%203D%20Design%20Consultation"
           }}
           ctaIcon={Sparkles}
           useInvertedBackground={false}
           animationType="slide-up"
           faqs={[
             {
-              id: "1",              title: "What areas do you service?",              content: "We service the entire Greater Toronto Area (GTA), including Toronto, Scarborough, Markham, North York, Richmond Hill, Vaughan, Pickering, Ajax, and surrounding communities. Contact us to discuss your specific location."
+              id: "1",              title: "What areas do you service?",              content: "We service the entire Greater Toronto Area (GTA), including Toronto, Scarborough, Markham, North York, Richmond Hill, Vaughan, Pickering, Ajax, and surrounding communities. Contact us for your specific location."
             },
             {
-              id: "2",              title: "Do you offer complimentary consultations?",              content: "Yes, we provide free on-site consultations for all projects. During your visit, we assess your property, understand your architectural vision, and provide transparent project estimates."
+              id: "2",              title: "Do you offer free consultations and quotes?",              content: "Yes, we provide free on-site consultations and quotes for all projects. During your consultation, we'll assess your property, discuss your vision, and provide transparent pricing."
             },
             {
-              id: "3",              title: "What does the 3D design process include?",              content: "Our complimentary 3D design service includes photorealistic architectural renderings showing materials, lighting, landscaping, and design details. This allows you to visualize the complete project and make confident design decisions before construction."
+              id: "3",              title: "What is included in the 3D design service?",              content: "Our free 3D design includes photorealistic renderings of your complete project, showing materials, lighting, landscaping, and final details. This allows you to visualize the finished result before construction begins."
             },
             {
-              id: "4",              title: "What are typical project timelines?",              content: "Project timelines vary by scope. Driveway installations typically require 1-2 weeks, patios 2-3 weeks, and larger architectural projects 4-6 weeks. We provide detailed project schedules during the planning phase."
+              id: "4",              title: "How long does a typical project take?",              content: "Project timelines vary depending on scope and complexity. A driveway typically takes 1-2 weeks, patios 2-3 weeks, and larger projects may take 4-6 weeks. We'll provide a detailed timeline during planning."
             },
             {
-              id: "5",              title: "Do you offer project warranties?",              content: "Absolutely. We stand behind our work with comprehensive warranties including workmanship guarantees and material-specific coverage. Full warranty details are provided with your project estimate."
+              id: "5",              title: "Do you offer warranties on your work?",              content: "Yes, we stand behind our work with comprehensive warranties. All installations include workmanship guarantees, and material warranties vary by product. Details are provided with your project estimate."
             },
             {
-              id: "6",              title: "Can we visit your material showroom?",              content: "We encourage all homeowners to visit our outdoor material showroom to explore interlock collections, natural stone options, and landscape lighting systems. Please contact us to schedule a convenient time."
+              id: "6",              title: "Can I visit your material showroom?",              content: "Absolutely! We encourage homeowners to visit our outdoor material showroom to explore interlock styles, natural stone options, and landscape lighting systems. Call us to schedule a convenient time."
             }
           ]}
         />
@@ -511,7 +471,7 @@ export default function LandingPage() {
               ]
             }
           ]}
-          copyrightText="© 2024 Taishan Construction. All rights reserved. Premium hardscape and architectural design services for the GTA."
+          copyrightText="© 2024 Taishan Construction. All rights reserved. Premium hardscape and construction services for the GTA."
         />
       </div>
     </ThemeProvider>
