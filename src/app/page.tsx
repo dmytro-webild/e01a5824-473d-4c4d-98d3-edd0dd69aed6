@@ -448,7 +448,7 @@ export default function LandingPage() {
       <div id="contact" data-section="contact">
         <ContactFaq
           ctaTitle="Ready to Transform Your Property?"
-          ctaDescription="Book a consultation and receive a free 3D preview of your project."
+          ctaDescription="Start your project with a free consultation and photorealistic 3D rendering."
           ctaButton={{
             text: "Get Free 3D Design",            href: "mailto:info@taishanconstruction.com?subject=Free%203D%20Design%20Consultation"
           }}

@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
-import "./styles/variables.css";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",  subsets: ["latin"],
-});
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."
-};
+  title: "Taishan Construction - Premium Hardscape & Construction Services Toronto",  description: "Premium landscaping and construction services across the GTA. Free 3D design, professional installation, material showroom."};
 
 export default function RootLayout({
   children,
@@ -18,12 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772755165036-dookr298.png" />
-      </head>
-      <body className={`${manrope.variable} antialiased`}>
-        {children}
-      
+      <body className={raleway.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
