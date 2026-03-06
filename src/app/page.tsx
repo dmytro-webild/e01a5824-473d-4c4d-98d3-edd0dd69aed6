@@ -173,19 +173,19 @@ export default function LandingPage() {
 
       <div id="3d-design" data-section="3d-design">
         <FeatureHoverPattern
-          title="Step Into Your Future Backyard"
-          description="Experience the emotional transformation of your outdoor space before the first stone is laid. Our immersive 3D renderings reveal not just what your project will look like, but how it will feel—the ambiance, the flow, the experience of luxury design realized."
+          title="See Your Project Before a Single Brick Is Laid"
+          description="Using advanced 3D visualization, we bring your project to life before construction begins—so you know exactly what to expect before a single brick is laid."
           tag="Visualization Technology"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           features={[
             {
               icon: Eye,
-              title: "Immersive Design Experience",              description: "Step into your future. Our photorealistic renderings show lighting, materials, landscaping, and the emotional character of your completed transformation",              button: { text: "Request Your Vision", href: "#contact" }
+              title: "Professional 3D Visualization",              description: "We create realistic renderings that show layout, materials, elevation, and lighting so you can clearly see how your project will look before construction begins.",              button: { text: "Request Your Vision", href: "#contact" }
             },
             {
               icon: ArrowRightLeft,
-              title: "Concept to Reality Comparison",              description: "Side-by-side visualizations of your current property and the finished design, revealing the transformative power of thoughtful architectural planning"
+              title: "Design vs Final Result",              description: "Compare our 3D design with the completed project to see how accurate planning leads to beautiful finished results."
             }
           ]}
           animationType="slide-up"
