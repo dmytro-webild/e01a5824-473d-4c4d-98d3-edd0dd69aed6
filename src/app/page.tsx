@@ -102,7 +102,7 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Taishan"
-          brandLogo="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772755165036-dookr298.png"
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772755165036-dookr298.png"
           navItems={[
             { name: "Services", id: "services" },
             { name: "Gallery", id: "gallery" },
