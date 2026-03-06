@@ -345,8 +345,8 @@ export default function LandingPage() {
         <SplitAbout
           title="Visit Our 
 10,000 SQFT Design Showroom"
-          description="Step into our curated space to explore premium materials, finishes, and design possibilities. Our expert team guides you through every option to refine your architectural vision."
-          tag="Material Consultation"
+          description="Explore interlock, natural stone, lighting, and outdoor features in person. Our team helps you compare materials and make confident decisions before construction begins."
+          tag="10,000+ SQFT SHOWROOM "
           tagAnimation="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -354,16 +354,17 @@ export default function LandingPage() {
           mediaAnimation="slide-up"
           bulletPoints={[
             {
-              title: "Experience Materials In Their Element",              description: "Touch, see, and envision authentic materials and finishes in carefully curated displays designed to inspire confident selections",              icon: Eye
+              title: "Experience Materials In Person
+",              description: "See and feel real interlock, natural stone, lighting, and outdoor materials in our showroom so you can confidently choose what fits your home.",              icon: Eye
             },
             {
-              title: "Design Consultation With Experts",              description: "Our specialists help refine your vision, balancing aesthetic aspirations with practical considerations and budget parameters",              icon: Users
+              title: "Design Consultation With Experts",              description: "Work with our team to plan layouts, materials, and features that balance design, durability, and budget.",              icon: Users
             },
             {
-              title: "Render-to-Reality Visualization",              description: "Compare your 3D architectural renderings with actual samples to ensure perfect harmony between design vision and final execution",              icon: Lightbulb
+              title: "Render-to-Reality Visualization",              description: "View your project in 3D on a big screen and compare materials with real samples to ensure everything works together before construction begins.",              icon: Lightbulb
             },
             {
-              title: "Access to Exclusive Collections",              description: "Discover premium architectural materials and professional-grade systems typically reserved for high-end design projects",              icon: Crown
+              title: "Live Design Configuration",              description: "Work 1:1 to adjust layouts, materials, and features in real time. We configure every detail together so your project is tailored exactly to your space.",              icon: Crown
             }
           ]}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-heyeujvs.jpg?_wi=1"
