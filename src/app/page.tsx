@@ -117,7 +117,7 @@ export default function LandingPage() {
         <HeroBillboardGallery
           title="Designing Outdoor Spaces Worth Coming Home To"
           description="Transform your property into a luxurious outdoor sanctuary through thoughtful design, exceptional craftsmanship, and meticulous planning. Every project begins with vision and precision."
-          tag="Architectural Design"
+          tag="Fully Insured • 6 Year Workmanship Warranty"
           tagIcon={Building2}
           tagAnimation="slide-up"
           buttons={[
@@ -127,13 +127,13 @@ export default function LandingPage() {
           buttonAnimation="slide-up"
           mediaItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749873463-dkhyfy2r.jpg",              imageAlt: "Premium project showcase"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749880030-2ulagvhd.jpg",              imageAlt: "Luxury construction detail"
             },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Contemporary design"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749880031-v2m3ehoo.jpg",              imageAlt: "Contemporary design"
             }
           ]}
           mediaAnimation="slide-up"
@@ -172,7 +172,7 @@ export default function LandingPage() {
               title: "Transparent Collaboration",              description: "Clear communication throughout every phase, with professional project management ensuring your vision becomes reality on schedule",              icon: MessageCircle
             }
           ]}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749903650-czkpede9.jpg"
           imageAlt="Material showroom display"
           buttons={[{ text: "Explore Our Approach", href: "#contact" }]}
           buttonAnimation="slide-up"
