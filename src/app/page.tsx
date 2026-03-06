@@ -137,6 +137,7 @@ export default function LandingPage() {
             }
           ]}
           mediaAnimation="slide-up"
+          background={{ variant: "plain" }}
           textBoxClassName="max-w-2xl"
           titleClassName="text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
           descriptionClassName="text-lg lg:text-xl leading-relaxed"
