@@ -152,12 +152,12 @@ export default function LandingPage() {
           description="A refined methodology combining architectural precision, cutting-edge visualization, and curated material expertise to create outdoor spaces of enduring beauty."
           background={{ variant: "plain" }}
           kpis={[
-            { value: "3D", label: "Photorealistic Design" },
-            { value: "100%", label: "Custom Solutions" },
-            { value: "6yr", label: "Warranty Coverage" }
+            { value: "3D", label: "Project Visualization " },
+            { value: "Custom", label: "Designed Projects" },
+            { value: "6 Year", label: "Warranty Coverage" }
           ]}
           enableKpiAnimation={true}
-          tag="Design Excellence"
+          tag="Our Process"
           tagIcon={Eye}
           tagAnimation="slide-up"
           buttons={[{ text: "Explore Our Approach", href: "#contact" }]}
