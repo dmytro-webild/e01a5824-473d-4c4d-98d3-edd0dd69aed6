@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
-import "./styles/variables.css";
-import "./styles/base.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Taishan Construction | Premium Hardscape & Outdoor Design",  description: "Toronto's trusted source for luxury outdoor spaces. Custom driveways, patios, and hardscaping designed with precision and built to last."};
+  title: "Taishan Construction - Premium Hardscape & Construction Services Toronto",  description: "Premium landscaping and construction services across the GTA. Free 3D design, professional installation, material showroom."
+};
 
 export default function RootLayout({
   children,
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
+      <body className={raleway.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
