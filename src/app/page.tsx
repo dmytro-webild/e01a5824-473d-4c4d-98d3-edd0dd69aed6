@@ -208,79 +208,42 @@ export default function LandingPage() {
       </div>
 
       <div id="services" data-section="services">
-        <div className="px-6 lg:px-12 py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto">
-            <div className="mb-12">
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Complete Solutions</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Services</h2>
-              <p className="text-lg text-foreground/80">Premium construction and landscaping services for Toronto and the Greater Toronto Area. Each project is crafted with precision and built to last.</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {[
-                {
-                  id: "interlock",                  icon: Cog,
-                  title: "Interlock Driveways",                  description: "Professional interlock paving with premium materials and expert installation"
-                },
-                {
-                  id: "patios",                  icon: Palette,
-                  title: "Backyard Patios",                  description: "Custom patio designs transforming outdoor living spaces into luxury retreats"
-                },
-                {
-                  id: "walkways",                  icon: Footprints,
-                  title: "Walkways",                  description: "Decorative and functional pathways connecting your property with style"
-                },
-                {
-                  id: "retaining",                  icon: Building2,
-                  title: "Retaining Walls",                  description: "Structural and aesthetic walls for landscaping and property management"
-                },
-                {
-                  id: "porches",                  icon: Home,
-                  title: "Natural Stone Porches",                  description: "Premium stone entry features creating impressive curb appeal"
-                },
-                {
-                  id: "lighting",                  icon: Zap,
-                  title: "Landscape Lighting",                  description: "Professional outdoor lighting systems enhancing ambiance and security"
-                }
-              ].map((service) => (
-                <div
-                  key={service.id}
-                  className="relative group"
-                  onMouseEnter={() => setServicesHoveredCard(service.id)}
-                  onMouseLeave={() => setServicesHoveredCard(null)}
-                >
-                  <div className="p-6 rounded-lg border border-accent/20 bg-card hover:border-primary-cta/40 transition-all duration-300">
-                    <service.icon className="w-8 h-8 text-primary-cta mb-4" />
-                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-foreground/70 text-sm">{service.description}</p>
-                  </div>
-                  {servicesHoveredCard === service.id && (
-                    <div className="absolute inset-0 rounded-lg bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <div className="text-center text-white p-4">
-                        <p className="font-semibold">See examples of this service</p>
-                        <p className="text-sm text-white/80">in our project gallery</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-card rounded-lg p-8 border border-accent/20">
-              <h3 className="text-2xl font-bold mb-6">Interlock Driveway Showcase</h3>
-              <p className="text-foreground/80 mb-8">Hover over the slider to see our photorealistic 3D renderings compared to actual completed projects:</p>
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                {beforeAfterPairs.map((pair, index) => (
-                  <BeforeAfterCard
-                    key={index}
-                    pair={pair}
-                    isHovered={galleryHoveredCard === `service-${index}`}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+        <FeatureHoverPattern
+          title="Our Services"
+          description="Premium construction and landscaping services for Toronto and the Greater Toronto Area. Each project is crafted with precision and built to last."
+          tag="Complete Solutions"
+          tagAnimation="slide-up"
+          features={[
+            {
+              icon: Cog,
+              title: "Interlock Driveways",              description: "Professional interlock paving with premium materials and expert installation"
+            },
+            {
+              icon: Palette,
+              title: "Backyard Patios",              description: "Custom patio designs transforming outdoor living spaces into luxury retreats"
+            },
+            {
+              icon: Footprints,
+              title: "Walkways",              description: "Decorative and functional pathways connecting your property with style"
+            },
+            {
+              icon: Building2,
+              title: "Retaining Walls",              description: "Structural and aesthetic walls for landscaping and property management"
+            },
+            {
+              icon: Home,
+              title: "Natural Stone Porches",              description: "Premium stone entry features creating impressive curb appeal"
+            },
+            {
+              icon: Zap,
+              title: "Landscape Lighting",              description: "Professional outdoor lighting systems enhancing ambiance and security"
+            }
+          ]}
+          animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          buttonAnimation="slide-up"
+        />
       </div>
 
       <div id="gallery" data-section="gallery">
