@@ -5,8 +5,7 @@ import "./globals.css";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Taishan Construction - Premium Hardscape & Construction Services Toronto",  description: "Premium landscaping and construction services across the GTA. Free 3D design, professional installation, material showroom."
-};
+  title: "Taishan Construction - Premium Hardscape & Construction Services Toronto",  description: "Premium landscaping and construction services across the GTA. Free 3D design, professional installation, material showroom."};
 
 export default function RootLayout({
   children,
