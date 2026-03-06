@@ -122,7 +122,7 @@ export default function LandingPage() {
           tagIcon={Building2}
           tagAnimation="slide-up"
           buttons={[
-            { text: "Claim Your Free 3D Design ", href: "#contact" },
+            { text: "Get Your Free 3D Design", href: "#contact" },
             { text: "View Our Work", href: "#gallery" }
           ]}
           buttonAnimation="slide-up"
