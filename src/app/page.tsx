@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import HeroSplitDualMedia from '@/components/sections/hero/HeroSplitDualMedia';
+import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import BlogCardThree from '@/components/sections/blog/BlogCardThree';
@@ -114,29 +114,29 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroSplitDualMedia
+        <HeroBillboardGallery
           title="Designing Outdoor Spaces Worth Coming Home To"
           description="Transform your property into a luxurious outdoor sanctuary through thoughtful design, exceptional craftsmanship, and meticulous planning. Every project begins with vision and precision."
           tag="Architectural Design"
           tagIcon={Building2}
-          background={{ variant: "plain" }}
-          mediaItems={[
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
-            },
-            {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
-            }
-          ]}
-          rating={5}
-          ratingText="1000+ Designs Realized"
+          tagAnimation="slide-up"
           buttons={[
             { text: "Start Designing Your Space", href: "#contact" },
             { text: "View Our Work", href: "#gallery" }
           ]}
           buttonAnimation="slide-up"
-          mediaAnimation="slide-up"
-          tagAnimation="slide-up"
+          items={[
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-uklcyhsf.jpg?_wi=1",              imageAlt: "Luxury construction detail"
+            },
+            {
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Contemporary design"
+            }
+          ]}
+          galleryAnimation="slide-up"
           textBoxClassName="max-w-2xl"
           titleClassName="text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
           descriptionClassName="text-lg lg:text-xl leading-relaxed"
