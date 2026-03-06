@@ -116,8 +116,8 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroBillboardGallery
           title="Designing Outdoor Spaces Worth Coming Home To"
-          description="Transform your property into a luxurious outdoor sanctuary through thoughtful design, exceptional craftsmanship, and meticulous planning. Every project begins with vision and precision."
-          tag="Fully Insured • 6 Year Workmanship Warranty"
+          description="Premium construction, landscaping, and renovation services designed to elevate homes across Toronto and the GTA."
+          tag="6 Year Workmanship Warranty"
           tagIcon={Building2}
           tagAnimation="slide-up"
           buttons={[
