@@ -125,7 +125,7 @@ export default function LandingPage() {
             { text: "View Our Work", href: "#gallery" }
           ]}
           buttonAnimation="slide-up"
-          items={[
+          mediaItems={[
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-lbulq2e9.jpg?_wi=1",              imageAlt: "Premium project showcase"
             },
@@ -136,7 +136,7 @@ export default function LandingPage() {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749929936-ok3joqnq.jpg?_wi=1",              imageAlt: "Contemporary design"
             }
           ]}
-          galleryAnimation="slide-up"
+          mediaAnimation="slide-up"
           textBoxClassName="max-w-2xl"
           titleClassName="text-5xl lg:text-6xl font-bold leading-tight tracking-tight"
           descriptionClassName="text-lg lg:text-xl leading-relaxed"
