@@ -1,23 +1,15 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
-import { Inter } from "next/font/google";
-import { Open_Sans } from "next/font/google";
 import "./styles/variables.css";
 import "./globals.css";
 
+const manrope = Manrope({
+  variable: "--font-manrope",  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Taishan Construction | Premium Hardscape & Building Services Toronto",  description: "Premium interlock driveways, patios, landscaping & construction services across the GTA. Free 3D design, expert installation, luxury results."
 };
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-});
 
 export default function RootLayout({
   children,
@@ -26,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${openSans.variable} antialiased`}>
+      <body className={`${manrope.variable} antialiased`}>
         {children}
       
         <script
