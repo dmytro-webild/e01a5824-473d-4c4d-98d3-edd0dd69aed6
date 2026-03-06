@@ -202,8 +202,8 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <p className="text-sm font-semibold uppercase tracking-wider text-primary-cta mb-2">Design + Craftsmanship</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4">Architectural Specialties</h2>
-              <p className="text-lg text-foreground/80">Premium outdoor design and construction across the Greater Toronto Area. Each commission represents a collaboration in creating spaces of lasting beauty and function.</p>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-4">What We Build.</h2>
+              <p className="text-lg text-foreground/80">We specialize in premium outdoor construction — including driveways, patios, walkways, entrances, retaining walls, and landscape lighting — helping homeowners across the GTA transform their properties.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
