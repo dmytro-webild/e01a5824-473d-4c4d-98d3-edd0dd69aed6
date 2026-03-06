@@ -12,7 +12,6 @@ import ContactFaq from '@/components/sections/contact/ContactFaq';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import { Building2, Eye, CheckCircle2, Palette, Users, MessageCircle, Sparkles, ArrowRightLeft, Cog, Footprints, Home, Zap, Shield, Hammer, Trees, Droplet, Frame, Lightbulb, Crown, Phone } from 'lucide-react';
 import React, { useState } from 'react';
-import Image from 'next/image';
 
 interface BeforeAfterImagePair {
   beforeSrc: string;
@@ -103,7 +102,7 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarStyleApple
           brandName="Taishan"
-          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772755165036-dookr298.png"
+          brandLogo="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772755165036-dookr298.png"
           navItems={[
             { name: "Services", id: "services" },
             { name: "Gallery", id: "gallery" },
