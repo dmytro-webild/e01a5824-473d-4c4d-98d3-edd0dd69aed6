@@ -3,6 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
+import HeroSplitKpi from '@/components/sections/hero/HeroSplitKpi';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureHoverPattern from '@/components/sections/feature/featureHoverPattern/FeatureHoverPattern';
 import BlogCardThree from '@/components/sections/blog/BlogCardThree';
@@ -146,39 +147,27 @@ export default function LandingPage() {
       </div>
 
       <div id="taishan-effect" data-section="taishan-effect">
-        <SplitAbout
+        <HeroSplitKpi
           title="The Taishan Approach"
           description="A refined methodology combining architectural precision, cutting-edge visualization, and curated material expertise to create outdoor spaces of enduring beauty."
-          tag="Design Excellence"
-          tagAnimation="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          imagePosition="right"
-          mediaAnimation="slide-up"
-          bulletPoints={[
-            {
-              title: "Strategic Planning & Conceptualization",              description: "We begin with a comprehensive vision, understanding your lifestyle and aesthetic preferences to craft a thoughtful design narrative",              icon: Eye
-            },
-            {
-              title: "Photorealistic 3D Visualization",              description: "Our advanced rendering technology transforms concepts into crystal-clear three-dimensional designs, revealing every material, finish, and spatial relationship before construction",              icon: CheckCircle2
-            },
-            {
-              title: "Curated Material Selection",              description: "Access to premium architectural materials and finishes, expertly curated and displayed in our showroom for confident, informed decisions",              icon: Palette
-            },
-            {
-              title: "Masterful Execution",              description: "Certified installation specialists with deep expertise in luxury hardscape construction and meticulous attention to architectural detail",              icon: Users
-            },
-            {
-              title: "Transparent Collaboration",              description: "Clear communication throughout every phase, with professional project management ensuring your vision becomes reality on schedule",              icon: MessageCircle
-            }
+          background={{ variant: "plain" }}
+          kpis={[
+            { value: "3D", label: "Photorealistic Design" },
+            { value: "100%", label: "Custom Solutions" },
+            { value: "6yr", label: "Warranty Coverage" }
           ]}
-          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749903650-czkpede9.jpg"
-          imageAlt="Material showroom display"
+          enableKpiAnimation={true}
+          tag="Design Excellence"
+          tagIcon={Eye}
+          tagAnimation="slide-up"
           buttons={[{ text: "Explore Our Approach", href: "#contact" }]}
           buttonAnimation="slide-up"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AXh5KliD4l7rWjrQZkOq7ZuPnH/uploaded-1772749903650-czkpede9.jpg"
+          imageAlt="Material showroom display"
+          mediaAnimation="slide-up"
+          imagePosition="right"
           titleClassName="text-5xl font-bold mb-4"
           descriptionClassName="text-lg leading-relaxed mb-8"
-          bulletTitleClassName="text-xl font-semibold mb-2"
         />
       </div>
 
